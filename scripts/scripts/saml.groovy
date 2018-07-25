@@ -17,4 +17,8 @@ def realm = new SamlSecurityRealm(idpMetadataConfig,
 
 def instance = Jenkins.getInstance()
 instance.setSecurityRealm(realm)
+
+//def strategy = new GlobalMatrixAuthorizationStrategy()
+//instance.setAuthorizationStrategy(strategy)
+
 instance.save()
