@@ -23,8 +23,8 @@ config?.each { library ->
         )
     pipeline.setDefaultVersion(library.value.defaultVersion)
     pipeline.setImplicit(library.value.implicit)
-    pipeline.setAllowVersionOverride(library.value.allowVersionOverride);
-    pipeline.setIncludeInChangesets(false);
+    pipeline.setAllowVersionOverride(library.value.allowVersionOverride)
+    pipeline.setIncludeInChangesets(false)
 
     results.add(pipeline)
 }
